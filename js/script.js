@@ -213,7 +213,7 @@ var dictionary = new WordList();
 
 //this function will run when the web page loads 
 window.onload = function run(){
-	dictionary = fetch("https://raw.githubusercontent.com/farhanfuad35/lumos/main/data/E2Bdatabase.json")  //accessing the json file
+	dictionary = fetch("https://raw.githubusercontent.com/MehreenRashid12/WordList/main/database/E2Bdatabase.json")  //accessing the json file
 	.then(response =>{
 		if(!response.ok){
 			throw new Error(response.status);
