@@ -242,6 +242,13 @@ const result = document.getElementById("result");
 
 //initiating the search function
 searchButton.addEventListener('click',search);
+searchBox.addEventListener('keypress',enter);
+
+function enter(){
+	if(event.keyCode == 13){
+		search();
+	}
+}
 
 
 //to search a word in the dictionary  
