@@ -237,7 +237,8 @@ window.onload = function run(){
 //accessing the html elements
 const searchButton = document.getElementById("search-button");
 const searchBox = document.getElementById("search-box");
-const result = document.querySelector(".result");
+const input = document.getElementById("given");
+const result = document.getElementById("result");
 
 //initiating the search function
 searchButton.addEventListener('click',search);
@@ -262,14 +263,15 @@ function search(){
 		var secondaryHash = hash.getSecondaryHash(a,b,m,searchWord);
 
 		if(hash.hashTable[primaryHash][secondaryHash]!=null && dictionary.words[hash.hashTable[primaryHash][secondaryHash]].en == searchWord){
+			input.innerHTML = searchWord;
 			result.innerHTML = dictionary.words[hash.hashTable[primaryHash][secondaryHash]].bn;
 		}
 		else{
 			throw 'Word Not Found';
 		}
 	}catch(err){
-		console.log(err);
-		result.innerHTML = "Word Not Found";
+		input.innerHTML = searchWord;
+		result.innerHTML = "Sorry, word not found :(";
 	}	
 	
 }

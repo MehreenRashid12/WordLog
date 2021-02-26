@@ -1,0 +1,57 @@
+body{
+	background-color:#bca0dc;
+}
+
+
+
+#header {
+	background-color: #462d6d;
+}
+
+#searchbar{
+	background-color: #000;
+}
+
+#result{
+	font-size: 30px;
+}
+
+#given{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.col-lg-4{
+	font-family: 'Lato', sans-serif;
+	color: #000;
+}
+
+.lead{
+	color: #bca0dc;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn{
+	font-family: 'Lato', sans-serif;
+	color: #000;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+a{
+	color: #bca0dc;
+
+}
+
+footer {
+	padding: 5px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #462d6d ;
+	font-size: 20px;
+	text-align: center;
+}
